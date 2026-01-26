@@ -41,28 +41,41 @@ const galleryImages = [
   "IMG_6880.jpeg",
   "IMG_9093.jpeg",
   "IMG_3916.jpeg",
+  "IMG_0268.jpeg",
+  "IMG_1999.jpeg",
+  "IMG_2945.jpeg",
+  "IMG_2948.jpeg",
+  "IMG_3950.jpeg",
+  "IMG_3951.jpeg",
+  "IMG_6244.jpeg",
+  "IMG_6471.jpeg",
+  "IMG_6779.jpeg",
+  "IMG_6954.jpeg",
+  "IMG_7608.jpeg",
+  "IMG_7742.jpeg",
+  "IMG_8741.jpeg",
 ];
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen bg-pink-50">
+    <div className="min-h-screen bg-blue-100">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-2">
           {/* Mobile: centered links */}
           <div className="md:hidden flex justify-center gap-6 py-2">
-            <a href="#home" className="text-pink-800 hover:text-pink-600 text-sm tracking-wider uppercase">Home</a>
-            <a href="#pricing" className="text-pink-800 hover:text-pink-600 text-sm tracking-wider uppercase">Pricing</a>
-            <a href="#gallery" className="text-pink-800 hover:text-pink-600 text-sm tracking-wider uppercase">Gallery</a>
-            <a href="#contact" className="text-pink-800 hover:text-pink-600 text-sm tracking-wider uppercase">Contact</a>
+            <a href="#home" className="text-blue-900 hover:text-blue-900 text-sm tracking-wider uppercase">Home</a>
+            <a href="#pricing" className="text-blue-900 hover:text-blue-900 text-sm tracking-wider uppercase">Pricing</a>
+            <a href="#gallery" className="text-blue-900 hover:text-blue-900 text-sm tracking-wider uppercase">Gallery</a>
+            <a href="#contact" className="text-blue-900 hover:text-blue-900 text-sm tracking-wider uppercase">Contact</a>
           </div>
           {/* Desktop: logo centered with menu split */}
           <div className="hidden md:flex items-center justify-center">
             <div className="flex items-center gap-10">
-              <a href="#home" className="text-pink-800 hover:text-pink-600 tracking-widest uppercase text-sm">Home</a>
-              <a href="#pricing" className="text-pink-800 hover:text-pink-600 tracking-widest uppercase text-sm">Pricing</a>
+              <a href="#home" className="text-blue-900 hover:text-blue-900 tracking-widest uppercase text-sm">Home</a>
+              <a href="#pricing" className="text-blue-900 hover:text-blue-900 tracking-widest uppercase text-sm">Pricing</a>
             </div>
             <a href="#home" className="mx-10">
               <Image
@@ -74,15 +87,15 @@ export default function Home() {
               />
             </a>
             <div className="flex items-center gap-10">
-              <a href="#gallery" className="text-pink-800 hover:text-pink-600 tracking-widest uppercase text-sm">Gallery</a>
-              <a href="#contact" className="text-pink-800 hover:text-pink-600 tracking-widest uppercase text-sm">Contact</a>
+              <a href="#gallery" className="text-blue-900 hover:text-blue-900 tracking-widest uppercase text-sm">Gallery</a>
+              <a href="#contact" className="text-blue-900 hover:text-blue-900 tracking-widest uppercase text-sm">Contact</a>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section with Logo */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center">
+      <section id="home" className="relative min-h-screen flex flex-col items-center justify-center">
         <div className="absolute inset-0">
           <Image
             src="/images/logo.png"
@@ -92,25 +105,28 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-pink-50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-blue-100" />
+        <p className="absolute bottom-32 text-blue-900 text-xl md:text-2xl italic font-serif tracking-wide">
+          Cakes that create memories
+        </p>
       </section>
 
       {/* Flavors Section */}
       <section id="flavors" className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-pink-800 mb-10">Flavors</h2>
+          <h2 className="text-4xl font-bold text-blue-900 mb-10">Flavors</h2>
           <div className="flex flex-wrap justify-center gap-6">
-            <div className="bg-pink-50 px-8 py-4 rounded-full shadow-sm">
-              <span className="text-pink-800 tracking-wide">Classic Yellow</span>
+            <div className="bg-blue-100 px-8 py-4 rounded-full shadow-sm">
+              <span className="text-blue-900 tracking-wide">Classic Yellow</span>
             </div>
-            <div className="bg-pink-50 px-8 py-4 rounded-full shadow-sm">
-              <span className="text-pink-800 tracking-wide">Funfetti</span>
+            <div className="bg-blue-100 px-8 py-4 rounded-full shadow-sm">
+              <span className="text-blue-900 tracking-wide">Funfetti</span>
             </div>
-            <div className="bg-pink-50 px-8 py-4 rounded-full shadow-sm">
-              <span className="text-pink-800 tracking-wide">Chocolate</span>
+            <div className="bg-blue-100 px-8 py-4 rounded-full shadow-sm">
+              <span className="text-blue-900 tracking-wide">Chocolate</span>
             </div>
-            <div className="bg-pink-50 px-8 py-4 rounded-full shadow-sm">
-              <span className="text-pink-800 tracking-wide">Red Velvet</span>
+            <div className="bg-blue-100 px-8 py-4 rounded-full shadow-sm">
+              <span className="text-blue-900 tracking-wide">Red Velvet</span>
             </div>
           </div>
         </div>
@@ -119,26 +135,26 @@ export default function Home() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-pink-800 mb-12">Pricing</h2>
+          <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">Pricing</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Tiered Cakes */}
-            <div className="bg-pink-50 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold text-pink-700 mb-4">Tiered Cakes</h3>
+            <div className="bg-blue-100 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Tiered Cakes</h3>
               <ul className="space-y-3 text-gray-700">
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>6&quot;/8&quot;</span>
                   <span className="font-semibold">$195</span>
                 </li>
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>6&quot;/8&quot;/10&quot;</span>
                   <span className="font-semibold">$295</span>
                 </li>
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>6&quot;/8&quot;/10&quot; (6 layers)</span>
                   <span className="font-semibold">$350</span>
                 </li>
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>6&quot;/8&quot;/10&quot;/12&quot;</span>
                   <span className="font-semibold">$395</span>
                 </li>
@@ -149,34 +165,34 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Single Cakes */}
-            <div className="bg-pink-50 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold text-pink-700 mb-4">Single Cakes</h3>
+            {/* Single Layer */}
+            <div className="bg-blue-100 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Single Layer</h3>
               <ul className="space-y-3 text-gray-700">
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>6&quot;</span>
-                  <span className="font-semibold">$35</span>
+                  <span className="font-semibold">$40</span>
                 </li>
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>8&quot;</span>
-                  <span className="font-semibold">$45</span>
-                </li>
-                <li className="flex justify-between border-b border-pink-200 pb-2">
-                  <span>9&quot;</span>
                   <span className="font-semibold">$55</span>
+                </li>
+                <li className="flex justify-between border-b border-blue-400 pb-2">
+                  <span>9&quot;</span>
+                  <span className="font-semibold">$65</span>
                 </li>
                 <li className="flex justify-between">
                   <span>10&quot;</span>
-                  <span className="font-semibold">$65</span>
+                  <span className="font-semibold">$75</span>
                 </li>
               </ul>
             </div>
 
             {/* Sheet Cakes */}
-            <div className="bg-pink-50 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold text-pink-700 mb-4">Sheet Cakes</h3>
+            <div className="bg-blue-100 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Sheet Cakes</h3>
               <ul className="space-y-3 text-gray-700">
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>1/4 Sheet</span>
                   <span className="font-semibold">$125</span>
                 </li>
@@ -188,18 +204,18 @@ export default function Home() {
             </div>
 
             {/* Extras */}
-            <div className="bg-pink-50 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold text-pink-700 mb-4">Extras</h3>
+            <div className="bg-blue-100 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Extras</h3>
               <ul className="space-y-3 text-gray-700">
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>Cake Tasting (per person)</span>
                   <span className="font-semibold">$20</span>
                 </li>
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>Cupcakes (decorated)</span>
-                  <span className="font-semibold">$3 each</span>
+                  <span className="font-semibold">starting at $3 each</span>
                 </li>
-                <li className="flex justify-between border-b border-pink-200 pb-2">
+                <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>FSC 4&quot;</span>
                   <span className="font-semibold">$4</span>
                 </li>
@@ -214,9 +230,9 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-20 px-4 bg-pink-50">
+      <section id="gallery" className="py-20 px-4 bg-blue-100">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-pink-800 mb-12">Gallery</h2>
+          <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
               <button
@@ -239,18 +255,18 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-pink-800 mb-8">Contact Us</h2>
-          <div className="bg-pink-50 rounded-2xl p-8 shadow-sm space-y-6">
+          <h2 className="text-4xl font-bold text-blue-900 mb-8">Contact Us</h2>
+          <div className="bg-blue-100 rounded-2xl p-8 shadow-sm space-y-6">
             <div>
-              <h3 className="text-xl font-semibold text-pink-700 mb-2">Email</h3>
-              <a href="mailto:ngbakes@email.com" className="text-lg text-gray-700 hover:text-pink-600">
-                ngbakes@email.com
+              <h3 className="text-xl font-semibold text-blue-900 mb-2">Email</h3>
+              <a href="mailto:Nicole@ngbakes.com" className="text-lg text-gray-700 hover:text-blue-900">
+                Nicole@ngbakes.com
               </a>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-pink-700 mb-2">Phone</h3>
-              <a href="tel:+15551234567" className="text-lg text-gray-700 hover:text-pink-600">
-                (555) 123-4567
+              <h3 className="text-xl font-semibold text-blue-900 mb-2">Phone</h3>
+              <a href="tel:+13109987620" className="text-lg text-gray-700 hover:text-blue-900">
+                (310) 998-7620
               </a>
             </div>
           </div>
@@ -258,7 +274,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-pink-800 text-white py-6 text-center">
+      <footer className="bg-blue-900 text-white py-6 text-center">
         <p>&copy; {new Date().getFullYear()} NG Bakes. All rights reserved.</p>
       </footer>
 
@@ -269,7 +285,7 @@ export default function Home() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white text-4xl hover:text-pink-300 transition-colors"
+            className="absolute top-4 right-4 text-white text-4xl hover:text-blue-400 transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             &times;
