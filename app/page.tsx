@@ -106,9 +106,6 @@ export default function Home() {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-blue-100" />
-        <p className="absolute bottom-32 text-blue-900 text-xl md:text-2xl italic font-serif tracking-wide">
-          Cakes that create memories
-        </p>
       </section>
 
       {/* Flavors Section */}
@@ -217,7 +214,7 @@ export default function Home() {
                 </li>
                 <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>FSC 4&quot;</span>
-                  <span className="font-semibold">$4</span>
+                  <span className="font-semibold">starting at $4 each</span>
                 </li>
                 <li className="flex justify-between">
                   <span>Delivery (within 15 miles)</span>
@@ -267,6 +264,12 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Phone</h3>
               <a href="tel:+13109987620" className="text-lg text-gray-700 hover:text-blue-900">
                 (310) 998-7620
+              </a>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-blue-900 mb-2">Instagram</h3>
+              <a href="https://instagram.com/NGbakes76" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-blue-900">
+                @NGbakes76
               </a>
             </div>
           </div>
