@@ -126,6 +126,9 @@ export default function Home() {
               <span className="text-blue-900 tracking-wide">Red Velvet</span>
             </div>
           </div>
+          <div className="mt-10">
+            <span className="bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-sm inline-block">Ask about custom flavors!</span>
+          </div>
         </div>
       </section>
 
@@ -162,9 +165,9 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Single Layer */}
+            {/* Layered Cakes */}
             <div className="bg-blue-100 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Single Layer</h3>
+              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Layered Cakes</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex justify-between border-b border-blue-400 pb-2">
                   <span>6&quot;</span>
@@ -213,7 +216,7 @@ export default function Home() {
                   <span className="font-semibold">starting at $3 each</span>
                 </li>
                 <li className="flex justify-between border-b border-blue-400 pb-2">
-                  <span>FSC 4&quot;</span>
+                  <span>Frosted Sugar Cookies</span>
                   <span className="font-semibold">starting at $4 each</span>
                 </li>
                 <li className="flex justify-between">
